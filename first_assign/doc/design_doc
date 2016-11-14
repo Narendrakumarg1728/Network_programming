@@ -1,0 +1,33 @@
+Server:
+======
+1. Handles exact two inputs in the CLI, where the second variabble is the port number.
+2. Convert ASCII to integer of the port number and display it
+3. Create socket, if socket creation fails error out.
+4. Clear Socket address structure with bzero function.
+5. Initialize Socket address structure to accept any client IP and the port number provided in Step 1.
+6. Bind to accept connection with any client with the socket address, if bind fails error out.
+7. Start listening for client request and capture the client address, if listen fails display error.
+8. Accept the connection, if accept connection fails error out.
+9. Clear buffer and read the command from the client and save it into buffer.
+10. Check if the command is proper and if not display error.
+11. If the command is proper, parse the command to shell prompt using popen.
+12. Capture the popen output using fgets function and send it to client using write() function.
+13. Close the popen connection with pclose().
+14. If popen fails , display error.
+15. Close the connection and repeat from step 3.
+
+
+ Client:
+============
+1. Handles exact three inputs in the CLI, where the second variable is the servers's IP address and third variable is  the port number.
+2. Convert ASCII to integer of the port number and display it
+3. Create socket, if socket creation fails error out.
+4. Clear Socket address structure with bzero function.
+5. Convert IP address to integers using inet_pton()
+6. Connect to server, if connection fails error out.
+7. bzero the buffer and capture the command by the user.
+8. Pass the command to the server using write()
+9.In loop read the output from the server.
+10. Once the server responds, display the output.
+11. Close the connection.
+12. Repeat from step 3.

@@ -1,0 +1,12 @@
+Initially server will create a socket with the port provided and will be binded to use any client IP address.
+Using the socket created server will start to listen to any client which will try to contact at that port.
+Similarly Client will create a socket on the port where the server will be listening and will try to connect to the server with the server IP address and the port.
+The server stays in passive open state untill the client raises a request. 
+Once the client request for the connection, the server accepts the request.
+Once the connection is accepted the server reads the commands sent by the client.
+Server will execute the received command and execute it on the shell prompt of the server and responses back to the client with the out put obtained from the shell.
+Client will display this message.
+
+Server will ignore bad commands and will not be affected by client crashes.
+
+

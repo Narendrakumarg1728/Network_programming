@@ -1,0 +1,33 @@
+Name: Narendra Kumar Govinda Raju
+
+List of Files:
+=============
+Folder Name: src    (This folder has all the source code files)
+             Files: myclient.c : Source code for client.
+                    myserver.c: Source code for server 
+                    myunp.c: Source code for myunp which has many socket API functions.
+                    myunp.h: Header for the myunp.c.
+
+Folder Name: bin    (This folder has all the binary files)
+             Files: myclient: Binary file for the client
+                    myserver: Binary file for the server
+Folder Name: doc    (This folder contains all the documentation)
+             Files: README: This file which you are reading.
+                    design_doc: Document describes the design for this project.
+                    App_layer_spec: Describes the details of protocol.
+                    
+Folder Name: obj    (Object files and directory files (.d)  will be created here)
+             Files: myclient.o: Object file for the client.
+                    myserver.o: Object file for the server.
+                    myunp.o:    Object file for the myunp.
+                    myclient.d: File for myclient which is collection of the configuration files. 
+                    myserver.d: File for myserver which is collection of the configuration files.
+                    myunp.d:    File for myunp which is collection of the configuration files.
+
+File: Makefile:     Is a configuration file which will use the make utility to build the software from its source file.
+
+
+What works:
+==========
+Verified all the commands provided and also few others.
+  
